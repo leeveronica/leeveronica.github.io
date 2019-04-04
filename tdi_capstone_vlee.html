@@ -11860,17 +11860,17 @@ March, 2019</p>
 <h4 id="Previous-Company-M&amp;A-records">Previous Company M&amp;A records<a class="anchor-link" href="#Previous-Company-M&amp;A-records">&#182;</a></h4><p>I collected historical M&amp;A records for 973 publicly traded companied in the U.S. between 1996 and 2016 from SDC M&amp;A database and caclulted log transformed M&amp;A deal values in $USD millions spent by each company, total count of past acquisitions by company. Based on the M&amp;A information given in this data set, I created a binary dummy variable tells the past M&amp;A occurence of the company. If the company had ever acquired another company, I gave "1", otherwise, "0".</p>
 <h4 id="Other-Company-Information">Other Company Information<a class="anchor-link" href="#Other-Company-Information">&#182;</a></h4><p>I collected company sector information for 973 publicly traded companied in the U.S. between 1996 and 2016 from SDC M&amp;A database and firm size (i.e., total revenue of the company) from the WRDS CEO biographic information Acceess Relational Database, using SQL.</p>
 <h3 id="Exploratory-Data-Visualization">Exploratory Data Visualization<a class="anchor-link" href="#Exploratory-Data-Visualization">&#182;</a></h3><p>Counts of companies by previous acquistion counts 
-<img src="data/acq_ct.PNG" alt="figure"></p>
+<img src="img/acq_ct.PNG" alt="figure"></p>
 <p>Counts of companies by CEO regulatory focus
-<img src="data/comp_ct_regfoci.png" alt="figure"></p>
+<img src="img/comp_ct_regfoci.png" alt="figure 1"></p>
 <p>Counts of company by CEO promotion focus %
-<img src="data/comp_ct_promo.png" alt="figure"></p>
+<img src="img/comp_ct_promo.png" alt="figure 2"></p>
 <p>Counts of company by CEO prevention focus %
-<img src="data/comp_ct_prev.png" alt="figure"></p>
+<img src="img/comp_ct_prev.png" alt="figure 3"></p>
 <p>Counts of company for sector 
-<img src="data/comp_ct_sector.png" alt="figure"></p>
+<img src="img/comp_ct_sector.png" alt="figure 4"></p>
 <p>Correlation Plot
-<img src="data/corr_plot.PNG" alt="figure"></p>
+<img src="img/corr_plot.PNG" alt="figure 5"></p>
 
 </div>
 </div>
@@ -14276,36 +14276,7 @@ Instead of relying on the relatively few regulatory focus words registered in tw
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="TDI-advice-for-the-project">TDI advice for the project<a class="anchor-link" href="#TDI-advice-for-the-project">&#182;</a></h3><p>Per Dylan's,<br>
-as for advice about your model and how the ROCAUC score might be improved:</p>
-<ol>
-<li><p>deal with the imbalanced labels so you might want to reexamine that first and foremost</p>
-<ul>
-<li><em>[Done.]</em> Used Upsampling</li>
-</ul>
-</li>
-<li><p>secondly you might want to allow for interactions between your categorical variables by using polynomial features of degree two with interaction terms only</p>
-<ul>
-<li><em>[Dropped.]</em> Draw a target and refoci_score scatter plot to heuristically think what polynomial features/regression may be useful. However, it doesn't seem to have any obvious concave or curve that may work well with polynomial regression. To double check, I calcualted the RMSE and R2 score for possible polynomial linear regression with degree of 1,2,3 and compared. Finally, I decied not to use polynomial features/regression after checking them. </li>
-</ul>
-</li>
-<li><p>perhaps do some dimensionality reduction on the backend afterwards (<a href="https://www.ritchieng.com/machine-learning-dimensionality-reduction-feature-transform/">https://www.ritchieng.com/machine-learning-dimensionality-reduction-feature-transform/</a>)</p>
-<ul>
-<li><em>[Done]</em> 2 PCA component analysis, along with 2D visualized plot was done. However, reducing of the dimensionality did not necessarily clearly seperate out binary classification of target label. While correlation analysis induced to drop many variables, I decided to include most of them, and particularly regulatory focus score. </li>
-<li>Regulatory focus score of the CEO was associated with hypothesis testing of this project. Although regulatory focus score does not work as the strong parameter predicting the future M&amp;A occurrence, I beleive I maybe able to show NLP analysis with plots in the future, seperately. </li>
-</ul>
-</li>
-<li><p>finally there's nothing in your data exploration or from my (nonexistent) background knowledge that would lead me to believe that a linear separator (logistic regression) should be sufficient for separating the two classes in this feature space</p>
-<ul>
-<li>I saw you were experimenting with SVM but couldn't find any place where you evaluated the results of using SVM</li>
-<li>I also didn't see any hyperparameter tuning for instance on the regularization strength
-so these are all things you could consider playing around with to improve your model performance
-probably roughly present in order of importance<ul>
-<li><em>[Done]</em> Added algorithm comparison using cross validation score with neagtive MSE scoring method; Using GridSearch CV to find the best hyperparameter for the best selected model: CART. Also, I ran linear polynomial regression and logit regression to test each of model fitness and algorithm comparison.  </li>
-</ul>
-</li>
-</ul>
+<div class="text_cell_render border-box-sizing rendered_html"></ul>
 </li>
 </ol>
 
@@ -14316,33 +14287,7 @@ probably roughly present in order of importance<ul>
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Theoretical-Framework-/-References">Theoretical Framework / References<a class="anchor-link" href="#Theoretical-Framework-/-References">&#182;</a></h3><p>Panel regression: <a href="http://www.cantab.net/users/bf100/pdf/pd_slides_fingleton.pdf">http://www.cantab.net/users/bf100/pdf/pd_slides_fingleton.pdf</a> <br>
-<a href="https://stats.stackexchange.com/questions/4700/what-is-the-difference-between-fixed-effect-random-effect-and-mixed-effect-mode">https://stats.stackexchange.com/questions/4700/what-is-the-difference-between-fixed-effect-random-effect-and-mixed-effect-mode</a></p>
-<p>Python Module Libraries for Regresson/ML:
-<a href="https://towardsdatascience.com/mixed-effects-random-forests-6ecbb85cb177">https://towardsdatascience.com/mixed-effects-random-forests-6ecbb85cb177</a> <br>
-<a href="https://www.kaggle.com/ojwatson/mixed-models">https://www.kaggle.com/ojwatson/mixed-models</a> <br>
-<a href="https://github.com/kshedden/Statsmodels-MixedLM">https://github.com/kshedden/Statsmodels-MixedLM</a> <br>
-<a href="https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/">https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/</a></p>
-<p>Python Pandas data wranglig trick (conversion from str(B), str(M) to numbers) <br>
-<a href="https://stackoverflow.com/questions/38013217/convert-from-billion-to-million-and-vice-versa/38013487">https://stackoverflow.com/questions/38013217/convert-from-billion-to-million-and-vice-versa/38013487</a> <br>
-<a href="https://stackoverflow.com/questions/39684548/convert-the-string-2-90k-to-2900-or-5-2m-to-5200000-in-pandas-dataframe">https://stackoverflow.com/questions/39684548/convert-the-string-2-90k-to-2900-or-5-2m-to-5200000-in-pandas-dataframe</a></p>
-<p>AUROC 
-<a href="https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5">https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5</a></p>
-<p>Train Accuracy vs Test Accuracy vs Confusion matrix
-<a href="https://datascience.stackexchange.com/questions/28426/train-accuracy-vs-test-accuracy-vs-confusion-matrix">https://datascience.stackexchange.com/questions/28426/train-accuracy-vs-test-accuracy-vs-confusion-matrix</a></p>
-<p>Save and Load ML models with pickling: 
-<a href="https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/">https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/</a>
-Dill pickle ML model: 
-<a href="https://www.datacamp.com/community/tutorials/pickle-python-tutorial">https://www.datacamp.com/community/tutorials/pickle-python-tutorial</a></p>
-<p>Deploy ML model as APIs using Flask: 
-<a href="https://www.analyticsvidhya.com/blog/2017/09/machine-learning-models-as-apis-using-flask/">https://www.analyticsvidhya.com/blog/2017/09/machine-learning-models-as-apis-using-flask/</a></p>
-<p>Word Cloud: 
-<a href="https://www.datacamp.com/community/tutorials/wordcloud-python">https://www.datacamp.com/community/tutorials/wordcloud-python</a></p>
-<p>Feature Selection:
-<a href="https://www.datacamp.com/community/tutorials/feature-selection-python">https://www.datacamp.com/community/tutorials/feature-selection-python</a></p>
-
-</div>
+<div class="text_cell_render border-box-sizing rendered_html"></div>
 </div>
 </div>
     </div>
