@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Veronica Lee
+title: Veronica's Blog
 email: veronica.sm.lee@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Veronica Lee - Data Scientist | Quantitative Researcher in Commercial Real Estate
+  Veronica Lee - Data Scientist in Commercial Real Estate
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
