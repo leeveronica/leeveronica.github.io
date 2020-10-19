@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Veronica's Blog
-email: veronica.sm.lee@gmail.com
+#email: veronica.sm.lee@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Veronica Lee - Data Scientist in Commercial Real Estate
 # Write an awesome description for your new site here. You can edit this
