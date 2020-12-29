@@ -1,8 +1,11 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  pathPrefix: '/',
+  // url: 'https://lumen.netlify.com',
+  url: 'https://leeveronica.github.io/',
+  // Adding Gatsby blog to existing site - https://github.com/gatsbyjs/gatsby/issues/16664
+  // Adding Path Prefix - https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/
+  pathPrefix: '/blog',
   title: 'Blog by Veronica Lee',
   subtitle: 'Business-oriented data scientist for future cities',
   copyright: '© All rights reserved.',
