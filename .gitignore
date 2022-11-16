@@ -1,14 +1,14 @@
-# dependencies
-node_modules
-/.pnp
-.pnp.js
+# # dependencies
+# node_modules
+# /.pnp
+# .pnp.js
 
-# testing
-/coverage
+# # testing
+# /coverage
 
-# production
-build
-public
+# # production
+# build
+# public
 
 #development
 .cache
