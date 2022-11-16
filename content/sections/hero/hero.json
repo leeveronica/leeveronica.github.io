@@ -1,7 +1,7 @@
 {
   "intro": "Hi!",
   "heroPhoto": {
-    "src": "../../images/vlee_white_bg.png",
+    "src": "../../images/vlee_white_bg_round.png",
     "alt": "My Photo"
   },
   "image": {
