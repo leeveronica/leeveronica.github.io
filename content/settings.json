@@ -1,34 +1,34 @@
 {
   "siteMetadata": {
-    "language": "en",
-    "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
-    "title": "Gatsby Starter for Portfolio Minimal",
+    "language": "en, kr",
+    "siteUrl": "https://leeveronica.github.io/",
+    "title": "Veronica Lee",
     "titleTemplate": "%s · Portfolio Minimal",
     "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
-    "author": "Konstantin Münster",
-    "avatar": "../content/images/gatsby.png",
-    "bio": "This biography will be used in the footer area of an article and can contain some more details about the author.",
+    "author": "Veronica Lee",
+    "avatar": "../content/images/favicon.png",
+    "bio": "",
     "social": {
-      "behance": "https://behance.com",
-      "github": "https://github.com/konstantinmuenster",
-      "medium": "https://konstantinmuenster.medium.com",
-      "linkedin": "https://www.linkedin.com/in/konstantin-muenster/",
-      "mail": "mailto:mail@konstantin.digital"
+      "behance": "",
+      "github": "https://github.com/leeveronica",
+      "medium": "https://medium.com/@veronica.sm.lee",
+      "linkedin": "https://www.linkedin.com/in/leeveronica/",
+      "mail": "mailto:veronica.sm.lee@gmail.com"
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "Portfolio" },
+    "logo": { "text": "Veronica Lee" },
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
-        { "label": "Blog", "url": "/blog" },
-        { "label": "Features", "url": "/#features" },
-        { "label": "Github", "url": "/#github" }
+        { "label": "Projects", "url": "/#features" },
+        { "label": "Blog", "url": "https://medium.com/@veronica.sm.lee" },
+        { "label": "Personal", "url": "/#github" }
       ],
       "ctaButton": {
         "openNewTab": true,
         "label": "Resume",
-        "url": "/resume.pdf"
+        "url": "/Resume___Veronica_Lee_Oct2022.pdf"
       },
       "footer": [
         { "label": "Privacy", "url": "/privacy" },

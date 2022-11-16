@@ -2,47 +2,77 @@
   "projects": [
     {
       "visible": true,
-      "category": "🕹️ EASY AND QUICK SETUP",
-      "title": "Add content and deploy!",
-      "description": "Get up and running within minutes. Just install the starter, add your content, deploy it, and there you go! This starter works seamlessly with hosts like Netlify. Photo by Clément H on Unsplash.",
-      "tags": ["Content Integration", "Ready-2-Deploy"],
+      "category": "DATA SCIENCE",
+      "title": "Geospatial Analysis of Restaurant Business in Las Vegas",
+      "description": "A geo-spatial/NLP analysis of Las Vegas restaurant reviews attributable to geographically varied consumer preferences. I mainly used R, QGIS, ggplot, Leaflet and Markdown.",
+      "tags": ["R", "QGIS","Geospatial","NLP"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "src": "../../images/lv-res2.PNG",
+        "alt": "DTLV restaurants",
+        "linkTo": "https://vl2354.github.io/LasVegas_Restaurants/"
       },
       "links": [
         {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
-        },
-        {
           "type": "external",
-          "url": "https://www.gatsbyjs.org/docs/mdx/writing-pages/"
+          "url": "https://vl2354.github.io/LasVegas_Restaurants/"
         }
       ]
     },
     {
       "visible": true,
-      "category": "🧰 EXTENDABLE LAYOUT",
-      "title": "Add more sections!",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
+      "category": "RESEARCH",
+      "title": "Cross-border VC Networks in the U.S. and their Exits",
+      "description": "Published in Journal of Internet Technology (JIT). I conducted social network analysis, using networks and graph theory, on the Domestic-Foreign cross-border Venture Capital syndications in the U.S. to explore the syndication's chance to acheive successful \"Exit\" (i.e., IPO or M&A) of its portfolio companies.",
+      "tags": ["R", "Social Network Analysis", "Graph Theory", "Strategy"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
+        "src": "../../images/vcnetwork.PNG",
+        "alt": "VC Network"
       },
       "links": [
         {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "type": "external",
+          "url": "../../JIT_vlee.pdf"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "DATA SCIENCE",
+      "title": "Predicting CEO's Propensity of M&A Execution",
+      "description": "A Machine Learning project conducting NLP analysis of the CEO's letters to shareholders extracted from 10-K reports and classifying CEO's psychological types. Based on CEO's psychological type linked to her verbiage, predicting CEO's propensity to execute company acquisition. I used Python, SQL, NLTK, Numpy, Sklearn and Matplotlib for this project.",
+      "tags": ["Python", "Machine Learning", "NLP", "Web Scraping"],
+      "image": {
+        "src": "../../images/ceo_2.PNG",
+        "alt": "CEO M&A"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "../../tdi_capstone_vlee.html"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "RESEARCH",
+      "title": "Users’ Usage of Enterprise Smart Application Influencing Job Performance",
+      "description": "Published in International Conference on Applied Business Research (ICABR). Empirical statistical analysis on hypothesis that users' usage intention of enterprise smart application may influence her job performance.",
+      "tags": ["Statistical Analysis", "Regression Analysis", "Hypothesis Testing", "Organization Theory"],
+      "image": {
+        "src": "../../images/userapp.PNG",
+        "alt": "Enterprise Smart App"
+      },
+      "links": [
+        {
+          "type": "external",
+          "url": "../../ICABR14_vlee_proceeding.pdf"
         }
       ]
     }
   ],
   "button": {
-    "visible": true,
+    "visible": false,
     "label": "Visit on Github",
-    "url": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal"
+    "url": "https://github.com/leeveronica"
   }
 }

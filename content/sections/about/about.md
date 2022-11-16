@@ -1,14 +1,20 @@
 ---
-imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
-imageAlt: "About Gatsby Theme Portfolio Minimal"
+imageSrc: "../../images/about_me.png"
+imageAlt: "About Veronica"
 ---
+Veronica is a <u>data scientist</u> who comes up with data driven solutions for business problems.
 
-Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
+She specializes in
 
-It has predefined sections for your bio, skills, projects, and contact details. If you are a writer on Medium, you can integrate your latest articles in a distinct section as well. While building the theme, I tried to keep the setup as simple as possible while keeping everything configurable if you like to.
+- Full stack computational data analytics includes:
+    - Machine Learning / AI
+    - Statistical modeling
+    - Data mining 
+    - Descriptive analysis and visualization
+- Financial analysis
 
-Using theme composition, you can easily customize the CSS theme to your own preferences - e.g. change colors, fonts, etc.
+Currently, she is a senior data scientist at <a href="https://www.vts.com/">VTS</a>, a <u>proptech SaaS</u> - company.
 
-Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :)
+Previously, she worked as a data scientist & investment salesperson at <a href="https://hodgeswardelliott.com/">HWE</a>, a <u>commercial real estate</u> services company. Prior to that, she analyzed <u>market/credit portfolio risk</u> at <a href="https://www.merrill.com/">"Bank of America Merrill Lynch</a>, and participated in <u>strategy research</u> projects at Columbia Business School & HEC Paris.
 
-Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash
+Outside of work she enjoys travelling, praying for birdies, going to art galleries (both fine art & <a href="https://www.cyber.xyz/veronica">web3 NFT</a>), and collbatorating with <a href="https://www.nykana.org/kana/">creators</a> & builders.

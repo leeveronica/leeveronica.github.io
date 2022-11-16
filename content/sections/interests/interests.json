@@ -1,58 +1,51 @@
 {
   "interests": [
     {
-      "label": "Quick and Easy Setup",
+      "label": "Python",
       "image": {
-        "src": "../../images/joystick.png",
+        "src": "../../images/icons8-python-48.png",
         "alt": ""
       }
     },
     {
-      "label": "Content via Markdown",
+      "label": "Clouod Computing",
       "image": {
-        "src": "../../images/notebook.png",
+        "src": "../../images/icons8-cloud-connection-64.png",
         "alt": ""
       }
     },
     {
-      "label": "Responsive Design",
+      "label": "Git",
       "image": {
-        "src": "../../images/nail-polish.png",
+        "src": "../../images/icons8-git-48.png",
         "alt": ""
       }
     },
     {
-      "label": "Medium Integration",
+      "label": "R",
       "image": {
-        "src": "../../images/medium.png",
+        "src": "../../images/icons8-registered-trademark-40.png",
         "alt": ""
       }
     },
     {
-      "label": "Animations",
+      "label": "SQL",
       "image": {
-        "src": "../../images/gem-stone.png",
+        "src": "../../images/icons8-sql-32.png",
         "alt": ""
       }
     },
     {
-      "label": "PWA (Offline Support)",
+      "label": "UNIX",
       "image": {
-        "src": "../../images/mobile-phone.png",
+        "src": "../../images/icons8-console-24.png",
         "alt": ""
       }
     },
     {
-      "label": "Modern Tech-Stack",
+      "label": "QGIS/ArcGIS",
       "image": {
-        "src": "../../images/gatsby.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Blazing Fast",
-      "image": {
-        "src": "../../images/high-voltage.png",
+        "src": "../../images/icons8-geo-61.png",
         "alt": ""
       }
     }

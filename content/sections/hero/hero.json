@@ -1,22 +1,22 @@
 {
-  "intro": "Hej",
+  "intro": "Hi!",
   "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
+    "src": "../../images/vlee_white_bg.png",
     "alt": "My Photo"
   },
   "image": {
     "src": "../../images/waving-hand.png",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm a Gatsby Starter",
+  "title": "I'm Veronica Lee,",
   "subtitle": {
-    "prefix": "I do all the setup ",
-    "highlight": "for you",
-    "suffix": "."
+    "prefix": "",
+    "highlight": "Full Stack Data Scientist",
+    "suffix": ""
   },
-  "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
+  "description": "who comes up with data-driven solutions for business problems.",
   "socialProfiles": {
-    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "from": ["LinkedIn", "Github", "Mail"],
     "showIcons": false
   }
 }
